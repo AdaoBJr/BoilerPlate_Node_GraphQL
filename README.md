@@ -1,1 +1,1 @@
-BlogAPI_GraphQL_SQLite
+BoilerPlate_Node_GraphQL
