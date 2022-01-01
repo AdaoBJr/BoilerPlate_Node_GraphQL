@@ -6,10 +6,7 @@ export default {
   },
   Query: {
     users: async () => await User.find(),
-    user: async (_, { id }) => {
-      const userMongo = await User.findById(id);
-      return userMongo;
-    },
+    user: async (_, { id }) => await User.findById(id),
   },
   Mutation: {
     createUser: async (_, { data }) => await User.create(data),
