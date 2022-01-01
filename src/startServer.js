@@ -1,8 +1,14 @@
 import { ApolloServer } from 'apollo-server';
+import mongoose from 'mongoose';
 import 'dotenv/config';
 
 export default function startServer({ typeDefs, resolvers }) {
-  const { SERVER_PORT } = process.env;
+  const { DB_URL, DB_NAME, SERVER_PORT, MONGO_PORT } = process.env;
+
+  mongoose.connect(`${DB_URL}:${MONGO_PORT}/${DB_NAME}`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 
   const app = new ApolloServer({
     typeDefs,
