@@ -1,0 +1,12 @@
+version: '3'
+services:
+  sqlite3:
+    container_name: sqlite3_db
+    restart: always
+    image: nouchka/sqlite3:latest
+    stdin_open: true
+    tty: true
+    ports:
+      - '9000:9000' # expose ports - HOST:CONTAINER
+    volumes:
+      - ./db/:/root/db/
