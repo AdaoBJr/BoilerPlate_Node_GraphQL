@@ -1,0 +1,36 @@
+{
+  "name": "1.nodejs-ts-typegraphql-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:AdaoBJr/1.nodejs-ts.git",
+  "author": "AdaoBJr <adao.junior@mcx.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --extensions \".js,.ts\"  --out-dir dist --copy-files --no-copy-ignored",
+    "start": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify index.ts"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.12.0",
+    "type-graphql": "^1.1.1",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.5.3",
+    "@graphql-tools/merge": "^8.2.1",
+    "@types/bcrypt": "^5.0.0",
+    "apollo-server": "^3.6.1",
+    "bcrypt": "^5.0.1",
+    "class-validator": "^0.13.2",
+    "dotenv": "^10.0.0",
+    "graphql": "^15.3.0",
+    "mongoose": "^6.1.5",
+    "reflect-metadata": "^0.1.13"
+  }
+}
