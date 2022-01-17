@@ -1,5 +1,5 @@
 <div align="center">
-<img src="readme/nodejs_animation.gif" width="250" height="250">
+  <img src="readme/nodejs_animation.gif" width="250" height="250">
 </div>
   
 <h1 align="center"> BoilerPlate - Apollo_Server_JS </h1>
