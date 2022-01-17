@@ -1,5 +1,7 @@
-<img src="readme/nodejs_animation.gif" width="50" height="50" >
-
+<div align="center">
+<img src="readme/nodejs_animation.gif" width="250" height="250">
+</div>
+  
 <h1 align="center"> BoilerPlates - Node </h1>
 
 ## 🧑🏻‍💻🧑🏻‍💻Desenvolvido por
