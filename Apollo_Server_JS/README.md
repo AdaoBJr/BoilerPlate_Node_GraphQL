@@ -1,1 +1,1 @@
-BoilerPlate_Node_GraphQL
+BoilerPlate_Node_Apollo
