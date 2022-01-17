@@ -4,19 +4,13 @@
   "description": "BlogAPI_GraphQL_SQLite",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon --exec babel-node index.js -e js,gql"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AdaoBJr/BlogAPI_GraphQL_SQLite.git"
+    "dev": "eval $(grep '^DEV' .env)",
+    "start": "eval $(grep '^START' .env)",
+    "build": "eval $(grep '^BUILD' .env)"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AdaoBJr/BlogAPI_GraphQL_SQLite/issues"
-  },
-  "homepage": "https://github.com/AdaoBJr/BlogAPI_GraphQL_SQLite#readme",
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
@@ -25,10 +19,11 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "@graphql-tools/load-files": "^6.5.3",
+    "@graphql-tools/merge": "^8.2.1",
     "apollo-server": "^3.5.0",
     "dotenv": "^10.0.0",
     "graphql": "15.7.2",
-    "merge-graphql-schemas": "^1.7.8",
     "mongoose": "^6.1.4"
   }
 }
