@@ -1,4 +1,6 @@
-<img src="readme/nodejs_animation.gif" width="250" height="250" >
+<div align="center">
+<img src="readme/nodejs_animation.gif" width="250" height="250">
+</div>
 
 <h1 align="center"> NodeJs - Typescript - BoilerPlate </h1>
 
