@@ -1,7 +1,7 @@
 import { User } from 'src/entities/User';
 import { IUsersRepository } from '../IUsersRepository';
 
-class MongoUsersRepository implements IUsersRepository {
+class UsersRepository implements IUsersRepository {
   private users: User[] = [];
 
   async findByEmail(email: string): Promise<User> {
@@ -14,4 +14,4 @@ class MongoUsersRepository implements IUsersRepository {
   }
 }
 
-export { MongoUsersRepository };
+export { UsersRepository };
