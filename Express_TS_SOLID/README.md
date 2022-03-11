@@ -1,4 +1,4 @@
-<img src="readme/nodejs_animation.gif" width="50" height="50" >
+<img src="readme/nodejs_animation.gif" width="250" height="250" >
 
 <h1 align="center"> NodeJs - Typescript - BoilerPlate </h1>
 
@@ -26,9 +26,9 @@ Primeiro faça a clonagem do projeto em algum diretorio do seu computador:
 
 ```bash
 > cd ~
-> cd Documents/Mcx
-> git clone git@bitbucket.org:AdaoBJr/1.nodejs-ts-boilerplate.git
-> cd 1.nodejs-ts-boilerplate
+> cd Documents/Desktop
+> git clone git@github.com:AdaoBJr/BoilerPlates_Node.git
+> cd BoilerPlates_Node
 ```
 
 Depois disso instale as dependências:
@@ -40,7 +40,7 @@ Depois disso instale as dependências:
 Por fim, rode o seguinte script para iniciar o projeto:
 
 ```bash
-> yarn start
+> yarn dev
 ```
 
-O projeto vai iniciar em http://localhost:3000/graphql.
+O projeto vai iniciar em http://localhost:4000/.
